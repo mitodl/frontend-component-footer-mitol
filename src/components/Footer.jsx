@@ -75,9 +75,8 @@ class SiteFooter extends React.Component {
           )}
           (
           <div className="copyright-col">
-            {process.env.TRADEMARK_TEXT 
-            && 
-            (
+            {process.env.TRADEMARK_TEXT
+            && (
             <div className="text-gray-500 small">
                 {process.env.TRADEMARK_TEXT}
             </div>
