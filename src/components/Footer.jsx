@@ -41,7 +41,7 @@ class SiteFooter extends React.Component {
   }
 
   renderLinkIfExists(value, text) {
-    return value && <li><a href={value}>{text}</a></li>;  
+    return value && <li><a href={value}>{text}</a></li>;
   }
 
   render() {
@@ -59,8 +59,9 @@ class SiteFooter extends React.Component {
         className="footer d-flex border-top py-3 px-4"
       >
         <div className="container-fluid d-flex">
-          { process.env.SHOW_LOGO 
-          && ( <a
+          { process.env.SHOW_LOGO
+          && (
+          <a
             className="d-block"
             href={process.env.SITE_URL}
             aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
@@ -70,24 +71,26 @@ class SiteFooter extends React.Component {
               src={logo || config.LOGO_TRADEMARK_URL}
               alt={process.env.LOGO_ALT_TEXT || intl.formatMessage(messages['footer.logo.altText'])}
             />
-          </a> )}
-          <div className="copyright-col">
-            ({process.env.TRADEMARK_TEXT 
-            && <div className="text-gray-500 small">
-                {process.env.TRADEMARK_TEXT}
-               </div>
-            })
-            <div>
-              <ul className="footer-sub-nav">
-                {this.renderLinkIfExists(process.env.ABOUT_US_URL, 'About Us')}
-                {this.renderLinkIfExists(process.env.TERMS_OF_SERVICE_URL, 'Terms of Service')}
-                {this.renderLinkIfExists(process.env.PRIVACY_POLICY_URL, 'Privacy Policy')}
-                {this.renderLinkIfExists(process.env.HONOR_CODE_URL, 'Honor Code')}
-                {this.renderLinkIfExists(process.env.Contact, 'Contact')}
-                {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
-              </ul>
+          </a>
+              )}
+          (
+            <div className="copyright-col">
+              {process.env.TRADEMARK_TEXT 
+              && <div className="text-gray-500 small">
+                  {process.env.TRADEMARK_TEXT}
+              </div>}
+              <div>
+                <ul className="footer-sub-nav">
+                  {this.renderLinkIfExists(process.env.ABOUT_US_URL, 'About Us')}
+                  {this.renderLinkIfExists(process.env.TERMS_OF_SERVICE_URL, 'Terms of Service')}
+                  {this.renderLinkIfExists(process.env.PRIVACY_POLICY_URL, 'Privacy Policy')}
+                  {this.renderLinkIfExists(process.env.HONOR_CODE_URL, 'Honor Code')}
+                  {this.renderLinkIfExists(process.env.Contact, 'Contact')}
+                  {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
+                </ul>
+              </div>
             </div>
-          </div>
+          )
           <div className="flex-grow-1" />
           {showLanguageSelector && (
             <LanguageSelector
