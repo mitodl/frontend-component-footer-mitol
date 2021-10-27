@@ -75,21 +75,23 @@ class SiteFooter extends React.Component {
           )}
           (
           <div className="copyright-col">
-              ( 
-              {process.env.TRADEMARK_TEXT && <div className="text-gray-500 small">
-                  {process.env.TRADEMARK_TEXT}
-              </div>}
-              )
-              <div>
-                <ul className="footer-sub-nav">
-                  {this.renderLinkIfExists(process.env.ABOUT_US_URL, 'About Us')}
-                  {this.renderLinkIfExists(process.env.TERMS_OF_SERVICE_URL, 'Terms of Service')}
-                  {this.renderLinkIfExists(process.env.PRIVACY_POLICY_URL, 'Privacy Policy')}
-                  {this.renderLinkIfExists(process.env.HONOR_CODE_URL, 'Honor Code')}
-                  {this.renderLinkIfExists(process.env.Contact, 'Contact')}
-                  {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
-                </ul>
-              </div>
+            {process.env.TRADEMARK_TEXT 
+            && 
+            (
+            <div className="text-gray-500 small">
+                {process.env.TRADEMARK_TEXT}
+            </div>
+            )}
+            <div>
+              <ul className="footer-sub-nav">
+                {this.renderLinkIfExists(process.env.ABOUT_US_URL, 'About Us')}
+                {this.renderLinkIfExists(process.env.TERMS_OF_SERVICE_URL, 'Terms of Service')}
+                {this.renderLinkIfExists(process.env.PRIVACY_POLICY_URL, 'Privacy Policy')}
+                {this.renderLinkIfExists(process.env.HONOR_CODE_URL, 'Honor Code')}
+                {this.renderLinkIfExists(process.env.Contact, 'Contact')}
+                {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
+              </ul>
+            </div>
           </div>
           )
           <div className="flex-grow-1" />
