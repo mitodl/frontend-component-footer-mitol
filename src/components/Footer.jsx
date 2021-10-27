@@ -72,13 +72,14 @@ class SiteFooter extends React.Component {
               alt={process.env.LOGO_ALT_TEXT || intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
-              )}
+          )}
           (
-            <div className="copyright-col">
-              {process.env.TRADEMARK_TEXT 
-              && <div className="text-gray-500 small">
+          <div className="copyright-col">
+              ( 
+              {process.env.TRADEMARK_TEXT && <div className="text-gray-500 small">
                   {process.env.TRADEMARK_TEXT}
               </div>}
+              )
               <div>
                 <ul className="footer-sub-nav">
                   {this.renderLinkIfExists(process.env.ABOUT_US_URL, 'About Us')}
@@ -89,7 +90,7 @@ class SiteFooter extends React.Component {
                   {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
                 </ul>
               </div>
-            </div>
+          </div>
           )
           <div className="flex-grow-1" />
           {showLanguageSelector && (
