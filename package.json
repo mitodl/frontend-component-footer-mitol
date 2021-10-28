@@ -1,5 +1,5 @@
 {
-  "name": "frontend-component-footer-mitol",
+  "name": "@mitodl/frontend-component-footer-mitol",
   "version": "1.0.0-semantically-released",
   "description": "Footer component for use when building Open edX frontend applications for MITX",
   "main": "dist/index.js",
