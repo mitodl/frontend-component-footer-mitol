@@ -11,10 +11,10 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000/"
     >
       <img
-        alt="Powered by Open edX"
+        alt="alt text"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
@@ -23,6 +23,56 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
         }
       />
     </a>
+    <div
+      className="copyright-col"
+    >
+      <div
+        className="text-gray-500 small"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       className="flex-grow-1"
     />
@@ -83,10 +133,10 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000/"
     >
       <img
-        alt="Powered by Open edX"
+        alt="alt text"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
@@ -95,6 +145,56 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
         }
       />
     </a>
+    <div
+      className="copyright-col"
+    >
+      <div
+        className="text-gray-500 small"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       className="flex-grow-1"
     />
@@ -113,10 +213,10 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000/"
     >
       <img
-        alt="Powered by Open edX"
+        alt="alt text"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
@@ -125,6 +225,56 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
         }
       />
     </a>
+    <div
+      className="copyright-col"
+    >
+      <div
+        className="text-gray-500 small"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/tos_and_honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       className="flex-grow-1"
     />
