@@ -86,6 +86,30 @@ Build a production distribution::
 
   npm run build
 
+***********
+Local Development
+***********
+
+For local development and testing follow these steps. (for convenince sake consider learning MFE as parent app)
+
+* Clone frontend-component-footer-mitol into frontend-app-learning directory.
+* CD into the frontend-component-footer-mitol and run the following commands::
+    
+    npm i
+
+    npm build
+* Verify a `dist/` forlder has been created.
+* CD back into frontend-app-learning and create a module.config.js file
+* Place the following code inf the module.config.js::
+    
+    localModules: [
+       { moduleName: '@edx/frontend-component-footer', dir: './frontend-component-footer-mitol' },
+       }
+    }
+
+* Restart frontend-app-learning and verify it is using the local version  from @edx/frontend-component-footer
+* For css changes you might need to rebuild again.
+
 .. |Build Status| image:: https://api.travis-ci.com/edx/frontend-component-footer.svg?branch=master
    :target: https://travis-ci.com/edx/frontend-component-footer
 .. |Codecov| image:: https://img.shields.io/codecov/c/github/edx/frontend-component-footer
