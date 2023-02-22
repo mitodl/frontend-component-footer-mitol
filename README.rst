@@ -184,16 +184,27 @@ Reporting Security Issues
 =========================
 
 Please do not report security issues in public. Please email security@openedx.org.
+=======
+***********
+Local Development
+***********
 
-.. |Build Status| image:: https://api.travis-ci.com/edx/frontend-component-footer.svg?branch=master
-   :target: https://travis-ci.com/edx/frontend-component-footer
-.. |Codecov| image:: https://img.shields.io/codecov/c/github/edx/frontend-component-footer
-   :target: @edx/frontend-component-footer
-.. |npm_version| image:: https://img.shields.io/npm/v/@edx/frontend-component-footer.svg
-   :target: @edx/frontend-component-footer
-.. |npm_downloads| image:: https://img.shields.io/npm/dt/@edx/frontend-component-footer.svg
-   :target: @edx/frontend-component-footer
-.. |license| image:: https://img.shields.io/npm/l/@edx/frontend-component-footer.svg
-   :target: @edx/frontend-component-footer
-.. |semantic-release| image:: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-   :target: https://github.com/semantic-release/semantic-release
+For local development and testing follow these steps. (for convenience sake consider learning MFE as parent app)
+
+* Clone frontend-component-footer-mitol into frontend-app-learning directory.
+* CD into the frontend-component-footer-mitol and run the following commands::
+    
+    npm i
+
+    npm build
+* Verify a `dist/` directory has been created.
+* CD back into frontend-app-learning and create a module.config.js file
+* Place the following code in the module.config.js::
+
+    module.exports = {
+        localModules: [
+           { moduleName: '@edx/frontend-component-footer', dir: './frontend-component-footer-mitol' },
+    }
+
+* Restart frontend-app-learning and verify it is using the local version  from @edx/frontend-component-footer
+* For css changes you might need to rebuild again.
