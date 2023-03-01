@@ -31,3 +31,4 @@ process.env.SITE_URL = 'http://localhost:18000/';
 process.env.LOGO_ALT_TEXT = 'alt text';
 process.env.SHOW_LOGO = true;
 process.env.SUPPORT_EMAIL = 'webmaster@email.com';
+process.env.ACCESSIBILITY_URL = 'https://accessibility.mit.edu/';
