@@ -65,6 +65,13 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
           </li>
           <li>
             <a
+              href="https://accessibility.mit.edu/"
+            >
+              Accessibility
+            </a>
+          </li>
+          <li>
+            <a
               href="http://localhost:18000/about"
             >
               SUPPORT CENTER
@@ -184,6 +191,13 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
           </li>
           <li>
             <a
+              href="https://accessibility.mit.edu/"
+            >
+              Accessibility
+            </a>
+          </li>
+          <li>
+            <a
               href="http://localhost:18000/about"
             >
               SUPPORT CENTER
@@ -260,6 +274,13 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
               href="http://localhost:18000/tos_and_honor"
             >
               Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://accessibility.mit.edu/"
+            >
+              Accessibility
             </a>
           </li>
           <li>
