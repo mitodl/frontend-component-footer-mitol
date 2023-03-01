@@ -80,6 +80,7 @@ class SiteFooter extends React.Component {
                 {this.renderLinkIfExists(process.env.PRIVACY_POLICY_URL, 'Privacy Policy')}
                 {this.renderLinkIfExists(process.env.HONOR_CODE_URL, 'Honor Code')}
                 {this.renderLinkIfExists(process.env.Contact, 'Contact')}
+                {this.renderLinkIfExists(process.env.ACCESSIBILITY_URL, 'Accessibility')}
                 {this.renderLinkIfExists(process.env.SUPPORT_CENTER_URL, process.env.SUPPORT_CENTER_TEXT || 'FAQ & Help')}
               </ul>
             </div>
