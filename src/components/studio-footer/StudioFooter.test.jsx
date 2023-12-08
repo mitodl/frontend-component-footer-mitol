@@ -10,9 +10,9 @@ import messages from './messages';
 const config = {
   LMS_BASE_URL: process.env.LMS_BASE_URL,
   MARKETING_SITE_BASE_URL: process.env.MARKETING_SITE_BASE_URL,
-  TERMS_OF_SERVICE_URL: process.env.TERMS_OF_SERVICE_URL,
-  PRIVACY_POLICY_URL: process.env.PRIVACY_POLICY_URL,
-  SUPPORT_EMAIL: process.env.SUPPORT_EMAIL,
+  TERMS_OF_SERVICE_URL: null,
+  PRIVACY_POLICY_URL: null,
+  SUPPORT_EMAIL: null,
   SITE_NAME: process.env.SITE_NAME,
   STUDIO_BASE_URL: process.env.STUDIO_BASE_URL,
   SHOW_ACCESSIBILITY_PAGE: process.env.SHOW_ACCESSIBILITY_PAGE,
