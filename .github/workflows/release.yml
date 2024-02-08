@@ -37,7 +37,6 @@ jobs:
       uses: cycjimmy/semantic-release-action@v3
       with:
         semantic_version: 16
-        tag_format: ${{ env.GITHUB_REF_NAME }}-v${version}
         branches: |
           ["master", "v12"]
       env:
